@@ -18,7 +18,7 @@ use recorder::SoundRecorder;
 use crate::transcriber::Transcriber;
 
 #[derive(Parser, Debug)]
-#[command(author, version, about = "Start a Whisper-backed server")]
+#[command(author, version, about = "Start the transcription server.")]
 struct Args {
     /// Path to the Whisper model file [example: /home/user/ggml-distil-large-v3.bin]
     #[arg(short = 'm', long, value_name = "WHISPER_MODEL_PATH")]
