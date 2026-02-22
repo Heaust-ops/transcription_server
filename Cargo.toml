@@ -1,0 +1,12 @@
+[package]
+name = "transcription_service"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.8"
+clap = { version = "4.5.60", features = ["derive"] }
+cpal = "0.16.0"
+tokio = { version = "1.49.0", features = ["full"] }
+voice_activity_detector = "0.2.1"
+whisper-rs = { version = "0.15.1", features = ["cuda"] }
