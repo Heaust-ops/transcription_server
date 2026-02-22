@@ -62,7 +62,6 @@ async fn main() {
     let transcriber;
     match args.model.to_str() {
         Some(e) => {
-            // /home/heaust/whisper/ggml/ggml-distil-large-v3.bin
             transcriber = Transcriber::new(&e);
         }
         None => {
